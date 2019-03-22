@@ -1,5 +1,6 @@
 package entity;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Food {
@@ -7,7 +8,7 @@ public class Food {
     private String foodName;
     private String description;
     private double price;
-    private Date createAt;
+    private String createAt;
 
     @Override
     public String toString() {
@@ -47,11 +48,14 @@ public class Food {
         this.price = price;
     }
 
-    public Date getCreateAt() {
+    public String getCreateAt() {
         return createAt;
     }
 
+
     public void setCreateAt(Date createAt) {
-        this.createAt = createAt;
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        this.createAt = format.format(createAt);
+
     }
 }
