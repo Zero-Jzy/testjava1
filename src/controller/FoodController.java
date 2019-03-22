@@ -1,3 +1,5 @@
+package controller;
+
 import entity.Food;
 
 import java.util.ArrayList;
@@ -19,7 +21,6 @@ public class FoodController {
         System.out.println("Nhập vào giá món ăn:");
         food.setPrice(sc.nextDouble());
         sc.nextLine();
-        food.setCreateAt(new Date());
         foodArrayList.add(food);
     }
 

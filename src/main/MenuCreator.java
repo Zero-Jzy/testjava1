@@ -1,3 +1,7 @@
+package main;
+
+import controller.FoodController;
+
 import java.util.Scanner;
 
 public class MenuCreator {
